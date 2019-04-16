@@ -8,7 +8,7 @@ import Section3 from '@/components/sections/Section3';
 Vue.use(Router);
 
 export default new Router({
-  mode: history,
+  mode: 'history',
   routes: [
     {
       path: '/',
