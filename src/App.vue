@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <navigation />
-    <router-link to="/sections/Section2">Section 2</router-link>
-    <router-link to="/sections/Section3">Section 3</router-link>
     <router-view/>
   </div>
 </template>
