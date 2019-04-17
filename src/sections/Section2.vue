@@ -1,32 +1,45 @@
 <template>
-  <div class="section2">
-    <div>
-      <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
-      >
-        <b-card-text>Some quick example text to build on the card
-           title and make up the bulk of the card's content.</b-card-text>
-
-        <b-button href="#" variant="primary">{{ msg }}</b-button>
-      </b-card>
-    </div>
-  </div>
+  <div>
+  <b-carousel
+    id="carousel-fade"
+    style="text-shadow: 0px 0px 2px #000"
+    fade
+    indicators
+    img-width="1024"
+    img-height="480"
+  >
+    <b-carousel-slide
+      caption="First slide"
+      :img-src="imgEnterprise"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption="Second Slide"
+      :img-src="imgEnterprise2"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption="Third Slide"
+      :img-src="imgEnterprise3"
+    ></b-carousel-slide>
+  </b-carousel>
+</div>
 </template>
 
 <script>
+import imgEnterprise from './../assets/img/Enterprise-B2B_Banner.jpg';
+import imgEnterprise2 from './../assets/img/Enterprise-B2B_Banner_GEOFF.jpg';
+import imgEnterprise3 from './../assets/img/Enterprise-B2B_Banner_ROB.jpg';
+
+console.log(imgEnterprise);
+
 export default {
-  name: 'Section2',
+  name: "Section2",
   data() {
     return {
-      msg: 'Text as a message',
+      imgEnterprise: imgEnterprise,
+      imgEnterprise2: imgEnterprise2,
+      imgEnterprise3: imgEnterprise3,
     };
-  },
+  }
 };
 </script>
 

@@ -10,11 +10,11 @@
         img-width="1024"
         img-height="480"
       >
-        <b-carousel-slide img-src="./../../static/assets/Degrees.jpg">
+        <b-carousel-slide :img-src="banner">
         </b-carousel-slide>
-        <b-carousel-slide img-src="./../../static/assets/Short-Courses.jpg">
+        <b-carousel-slide :img-src="banner2">
         </b-carousel-slide>
-        <b-carousel-slide img-src="./../../static/assets/Skills-for-Business.jpg">
+        <b-carousel-slide :img-src="banner3">
         </b-carousel-slide>
       </b-carousel>
     </div>
@@ -39,11 +39,18 @@
 </template>
 
 <script>
+import banner from '../assets/img/Degrees.jpg';
+import banner2 from '../assets/img/Short-Courses.jpg';
+import banner3 from '../assets/img/Skills-for-Business.jpg';
+
 export default {
   name: 'Home',
   data() {
     return {
       msg: 'TAFE NSW',
+      banner: banner,
+      banner2: banner2,
+      banner3: banner3,
     };
   },
 };
