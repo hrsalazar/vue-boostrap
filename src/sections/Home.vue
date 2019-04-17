@@ -1,8 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
-    <h2>TAFE NSW</h2>
-
     <div>
       <b-carousel
         id="carousel-fade"
@@ -12,11 +10,11 @@
         img-width="1024"
         img-height="480"
       >
-        <b-carousel-slide caption="First slide" img-src="../../assets/Degrees.jpg">
+        <b-carousel-slide img-src="./../../static/assets/Degrees.jpg">
         </b-carousel-slide>
-        <b-carousel-slide caption="Second Slide" img-src="../../assets/Short-Courses.jpg">
+        <b-carousel-slide img-src="./../../static/assets/Short-Courses.jpg">
         </b-carousel-slide>
-        <b-carousel-slide caption="Third Slide" img-src="../../assets/Skills-for-Business.jpg">
+        <b-carousel-slide img-src="./../../static/assets/Skills-for-Business.jpg">
         </b-carousel-slide>
       </b-carousel>
     </div>
